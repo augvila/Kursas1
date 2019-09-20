@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML8</title>
+    <style>
+        #space3{
+            font-size: 3px
+        }
+        #space30{
+            font-size: 30px
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+            Vardas: &nbsp;&nbsp;<input type= "text" check-value="checked"><br>
+            <p id="space3"></p>
+            Pavardė: <input type= "text"><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Klausimai</legend>
+            Kaip sužinojote apie mus?
+            <select>
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Spauda">Spauda</option>
+                <option value="Televizija">Televizija</option>
+                <option value="Draugai">Draugai</option>
+            </select>
+            <p id="space"></p>
+            <div>Ar apsilankysite vėl?</div>
+                <flex>
+                    Taip<input type="radio" name="apsilankymas" value="taip">
+                    Ne<input type="radio" name="apsilankymas" value="ne"/>
+                    Galbūt<input type="radio" name="apsilankymas" value="galbūt"/>
+                </flex>
+            <div>
+            <p id="space"></p>
+            Ką manote apie kursą?
+            </div>
+            <textarea rows="8" cols="100" name="comment" form="usrform" placeholder="Rašykite viską, ką galvojate"></textarea>
+            <p id="space"></p>
+            <div>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</div>
+            <div class="container">
+                    <input type="checkbox" value="c#">C#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" value="JAVA">JAVA
+                    <input type="checkbox" value="PHP">PHP<br>
+                    <input type="checkbox" value="HTML">HTML
+                    <input type="checkbox" value="CSS">CSS&nbsp;&nbsp;
+                    <input type="checkbox" value="JavaScript">JavaScript<br>
+                    <input type="checkbox" value="Python">Python
+                    <input type="checkbox" value="Ruby">Ruby
+            </div>
+            <p id="space30"></p>
+            <input type="submit" value="Siūsti">
+        </fieldset>
+    </form>
+</body>
+</html>
