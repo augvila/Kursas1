@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Pradzia | Neringa | Poezija.lt</title>
+<!--        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>-->
+        <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+        <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+                .header {
+/*                    position:sticky;*/
+                    padding: 15px;
+                    margin: 0;
+                    background-image: url("image/Ruduo.jpg");
+                    background-position: bottom;
+                    background-size: contain;
+                }
+                .title {
+                    text-align: center;
+                    color: lavender;
+                    font-size: 40px;
+                    font-style: oblique;
+                    font-weight: 1000;
+                    font-family:cursive;
+/*                    text-decoration-line: underline;*/
+                }
+                .navigation {
+                    text-align: start;
+                    float: right;
+                }
+                .navigation a {
+                    color: lavender;
+                    font-style: italic;
+                }
+                #fixed-bottom {
+/*                    position: fixed;*/
+                    bottom: 0;
+                    background: grey;
+                    color: lavender;
+                }
+                .main {
+                    background-color: #E0E6F8;
+                }
+                .name {
+                    color: #0489B1;
+                    font-style: oblique;
+                }
+                #neringa {
+                    border-radius: 50%;
+/*                    position: -webkit-sticky;*/
+                    position: inherit;
+                    top: 10px;
+                    left: 16px;
+                    width: 200px;
+                }
+                .text {
+                    font-style: oblique;
+                }
+                .aside {
+                    background-color: lavenderblush;
+                }
+                .aside-left {
+                    text-align: match-parent;
+                    font-family: cursive;
+                    padding-right: 20px;
+                }
+                #knygos {
+                    width: 200px;
+                }
+                * {
+                    box-sizing: border-box;
+                }
+                .comunicate {
+                    font-weight: 800;
+                    font-size: 15px;
+                }
+                .adress {
+                    font-weight: 800;
+                    font-size: 15px;
+                }
+                .column {
+                    float: left;
+                    width: 50%;
+                    padding: 10px;
+                    height: 100px;
+                }
+                #myBtn {
+                    display: none;
+                    position: fixed;
+                    bottom: 30px;
+                    right: 20px;
+                    z-index: 99;
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                    background-color:darkorchid;
+                    color: white;
+                    cursor: pointer;
+/*                    padding: 15px;*/
+                    border-radius: 15px;
+                }
+                #myBtn:hover {
+                    background-color: #555;
+                }
+               .wraper {
+                   display: flex;
+                   flex-direction: row;
+                   flex-wrap: wrap;
+                   text-align: center;
+               }
+               .wraper > * {
+                   border: 1px solid grey;
+                   flex: 1 100%;
+               }
+
+               @media all and (min-width: 600px){
+                   .aside {
+                       flex: 1 0 0;
+                   }
+               }
+               @media screen and (min-width: 800px){
+                   .main {
+                       flex: 3 0 0;
+                       order: 2;
+                   }
+                   .aside-left {
+                       order: 1;
+                   }
+                   .aside-right {
+                       order: 3;
+                   }
+                   .footer{
+                       order: 4;
+                   }
+                   }
+        </style>
+    </head>
+    <body>
+        <div class="wraper">
+            <header class="header">
+                <h1 class="title">
+                <img id="neringa" src="image/Neringa.jpg">
+                    Neringa Daniulaitienė
+                </h1>
+                <nav class="navigation">
+                  <a href="/eilerasciai/">Eilėraščiai</a> |
+<!--                  <a href="/knygospristatymai/">Knygos pristatymai</a> |-->
+                  <a href="/kontaktai/">Kontaktai</a>
+                </nav>
+            </header>
+            <article class="main">
+                <h1 class="name">
+                    Biografija
+                </h1>
+                <p class="text">
+                ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą ilgas tekstas apie Neringą
+                </p>
+            </article>
+            <aside class="aside aside-right">
+                <div>
+                    Jau greitai:
+                </div>
+                    <img id="knygos" src="image/knygos.jpg">
+                <div>
+                    Knyga/ knygos / knygų pristatymai (nuotraukos, aprašymai, atsiliepimai, reklama)
+                </div>
+            </aside>
+            <aside class="aside aside-left">
+                <ul>
+                    <div>***</div>
+                    kai ieškai šviesos, randi kai tykai tamsos, ji pati tave susiranda
+                    <div>***</div>
+                    užbaigtas darbas laisvė, bet ne ramybė kas toliau?
+                    <div>***</div>
+                    prisijungti ar atsijungti egzistencinis klausimas vyrams iš pakaunės
+                    <div>***</div>
+                    Filosofas apmąsto pasaulį. Moteris - apjaučia.
+                    <div>***</div>
+                    pirmoji šalna nelipa iš guoliukų augintiniai net pusryčiauti
+                    <div>***</div>
+                    laikas su sielos draugais neprarastas atrastas laikas
+                    <div>***</div>
+                    Kaip sukuriamas naujas receptas? Nepavykus jau sukurtam
+                    <div>***</div>
+                    Penktadienis Pilnatis Trylikta Neišsemiama tema
+                    <div>***</div>
+                    maistinės kandys nemokamas patikrinimas kas virtuvės spintelėje VALGOMA
+                    <div>***</div>
+                    sugrįžo nekviesta neramybė bliamba kaip išprašyti
+                    <div>***</div>
+                    Diena ne pagal planą? Palauk, bandau prisiminti. Laimingiausia diena...
+                    <div>***</div>
+                    pūvantys obuoliai graužia akis beprasmybės kvapas
+                    <div>***</div>
+                </ul>
+            </aside>
+            <button onclick="topFunction()" id="myBtn" title="Į viršų">&#8679;</button>
+            <footer class="footer" id="fixed-bottom">
+                <h1 class="comunicate">Bendraukime:</h1>
+                <div class="column">
+                    <h1 class="adress">Kontaktai</h1>
+                    <p>tekstas...</p>
+                </div>
+                <div class="column">
+                    <h1 class="adress">Sąskaita apmokėjimui</h1>
+                    <p>tekstas...</p>
+                </div>
+            </footer>
+            <script>
+                var mybutton = document.getElementById("myBtn");
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                    } else {
+                    mybutton.style.display = "none";
+                }
+                }
+                function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+    </body>
+</html>
